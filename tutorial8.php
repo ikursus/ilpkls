@@ -37,9 +37,12 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' )
   </p>
 </form>
 <p>
-<?php if (isset( $result )): ?>
-<?php echo $result; ?>
-<?php endif; ?>
+
+<?php if (isset( $result ))
+{
+	echo $result;
+}
+?>
 </p>
 </body>
 </html>
