@@ -2,7 +2,7 @@
 // Panggil fungsi access control / authenticating users
 require('auth.php');
 
-// Validate kewujudan GET id
+// Validate kewujudan POST
 if ( $_SERVER['REQUEST_METHOD'] == 'POST' )
 {
 	
@@ -50,5 +50,6 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' )
 	header('Location: pengajar.php?message=updated');
 	exit();
 }
+
 header('Location: pengajar.php');
 exit();

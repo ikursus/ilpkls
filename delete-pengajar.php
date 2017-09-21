@@ -2,7 +2,7 @@
 // Panggil fungsi access control / authenticating users
 require('auth.php');
 
-// Validate kewujudan GET id
+// Validate kewujudan GET id yang ingin dihapuskan
 if ( ! isset( $_GET['id'] ) )
 {
 	header('Location: pengajar.php');
@@ -12,7 +12,7 @@ if ( ! isset( $_GET['id'] ) )
 // Dapatkan connection Database
 include('database.php');
 
-// Dapatkan no. id dari GET id
+// Dapatkan no. id pengajar dari GET id
 $id = $_GET['id'];
 
 // Arahan hapus rekod dari table pengajar
